@@ -45,6 +45,7 @@ main{
     text-align: center;
 }
 
+
 aside{
     /* background: wheat; */
     grid-column: 3/4;
