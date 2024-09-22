@@ -1,26 +1,11 @@
-/* :root{
-    
-    --primary-color:#D1CA98;
-    --secondary-color:#FFB140;
-    --accent1-color:#EDBF85;
-    --accent2-color:#B7B3A1;
-
-    --heading-font:'Noto Serif', Serif;
-    --paragraph-font:'Roboto', Serif;
-
-    --nav-background-color:#FFB140;
-    --nav-link-color: #4ABEEC;
-    --nav-hover-link-color:#6209F0;
-    --nav-hover-background-color:#F7F06D; 
-} */
 :root {
     --primary-color: #396e94;
     --secondary-color: #e7c24f;
     --accent1-color: #a43312;
     --accent2-color: #381d2a;
 
-    --heading-font: 'Montserrat', sans-serif;
-    --paragraph-font: 'Open Sans', sans-serif;
+    --heading-font: "Roboto", system-ui;
+    --paragraph-font: "Roboto", system-ui;
 
     --nav-background-color: var(--primary-color);
     --nav-link-color: #ffffff;
@@ -59,6 +44,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     height: 40px;
+
 }
 
 nav a {
@@ -160,6 +146,7 @@ ul {
     height: 330px;
     position: relative;
     left: 50px;
+    top: 90px;
 }
 
 h3{
