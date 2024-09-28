@@ -29,6 +29,8 @@ header {
 
 .menu-icon {
     display: none; /* Hide menu-icon by default */
+    color: #fff;
+    background-color: #fff;
 }
 
 header,
@@ -93,13 +95,7 @@ nav a:hover {
 	padding: 2rem;
 }
 
-footer{
-    background: var(--primary-color);
-    text-align: center;
-    color: #eee;
-    padding: 2px;
-    background-color: blueviolet;
-}   
+   
 
 .hamburger {
     display: block;
@@ -126,6 +122,10 @@ h2{
     flex-direction: column;
 }
 
-.hamburger {
-    display: block; /* Ensure the hamburger menu is visible on mobile */
+footer{
+    background: var(--primary-color);
+    text-align: center;
+    color: #eee;
+    padding: 2px;
+    background-color: blueviolet;
 }
