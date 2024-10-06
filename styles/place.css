@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #002776;
+    --secondary-color: #ffdf00;
+    --background-color: #002776;
+    --nigeria-green: #009c3b;
+    --text-color: #ffffff;
+    --background-white: #ffffff;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+    --heading-font: "Roboto", system-ui;
+    --paragraph-font: "Roboto", system-ui;
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent1-color);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: var(--nigeria-green);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Hero image setup */
+  .hero {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Layout for weather and attractions */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: start;
+  }
+  
+  .weather, .attractions {
+    background-color: rgba(255, 255, 255, 0.7); /* Low opacity white background */
+    color: var(--background-color);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .weather-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .weather-icon {
+    width: 40px;
+  }
+  
+  ul {
+    padding: 7px;
+    list-style-type: none;
+  }
+  
+  ul li {
+    padding: 3px;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: var(--nigeria-green);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer::after {
+    content: "Thanks for visiting!";
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 600px) {
+    .grid {
+      display: block;
+    }
+  
+    .weather,
+    .attractions {
+      position: static;
+      width: 100%;
+      background-color: var(--secondary-color);
+      margin-bottom: 1rem;
+    }
+  
+    .weather-details {
+      flex-direction: column;
+    }
+  
+    .hero img {
+      width: 100%;
+    }
+  }
+  
