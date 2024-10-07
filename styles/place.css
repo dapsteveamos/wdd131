@@ -30,6 +30,13 @@ body {
   color: var(--text-color);
 }
 
+h2{
+  padding-left: 10px;
+  background-color: hsla(115, 91%, 48%, 0.7); /* Low opacity white background */
+  border-radius: 8px;
+
+}
+
 header {
   background-color: var(--nigeria-green);
   padding: 1rem;
