@@ -72,7 +72,7 @@ header {
 
 .attractions {
   width: 40%; /* Adjust width for large view */
-  top: 15%; /* Place weather section at 10% from top */
+  top: 20%; /* Place weather section at 10% from top */
   left: 5%; /* Place it 5% from the left */
 
 }
