@@ -72,8 +72,9 @@ header {
 
 .attractions {
   width: 40%; /* Adjust width for large view */
-  top: 10%; /* Place weather section at 10% from top */
+  top: 15%; /* Place weather section at 10% from top */
   left: 5%; /* Place it 5% from the left */
+
 }
 
 .weather {
@@ -107,6 +108,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+ 
 }
 
 /* Footer message */
@@ -141,5 +143,6 @@ footer::after {
   footer {
     position: static; /* Make sure footer is positioned normally */
     margin-bottom: 0.5rem;
+    height: auto;
   }
 }
