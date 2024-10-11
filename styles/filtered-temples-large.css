@@ -53,7 +53,7 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-		grid-auto-flow: column;
+		    grid-auto-flow: column;
 
     }
 
@@ -70,7 +70,7 @@ body {
 
 	
     .navigation {
-        display: flex;
+    display: flex;
 		gap: 1rem; /* Space between nav items */
         /* flex-direction: row; */
 		
