@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Images - STEVE DAPRIM AMOS </title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Steve Daprim Amos home page">
+    <meta name="author" content="STEVE DAPRIM AMOS">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js"  defer ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Demo</h1>
+    </header>
+
+    <main>
+        <!-- Lazy loading applied to images -->
+        <img src="/images/nigimagwebp08000.jpg" alt="A good description of the non decorative image" loading="lazy" width="300" height="500">
+        <img src="/images/temple01.jpg" alt="Description 1" loading="lazy" width="400" height="600">
+        <img src="/images/nigerian_flag.jpg" alt="Description 2" loading="lazy" width="350" height="600">
+        <img src="/images/nigerian_flag.jpg" alt="Description 3" loading="lazy" width="480" height="600">
+        <img src="/images/nigerian_flag.jpg" alt="Description 4" loading="lazy" width="500" height="600">
+        <img src="/images/nigerian_flag.jpg" alt="Description 5" loading="lazy" width="600" height="600">
+        <img src="/images/nigerian_flag.jpg" alt="Description 6" loading="lazy" width="450" height="600">
+    </main>
+
+    <footer>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
