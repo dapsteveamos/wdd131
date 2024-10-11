@@ -43,7 +43,7 @@ body {
 @media (min-width: 768px) {
 
     body {
-        max-width: 900px;
+        max-width: max-content;
         margin: 0 auto;
     }
 
@@ -52,6 +52,8 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 100%;
+		grid-auto-flow: column;
+
     }
 
     nav {
@@ -65,6 +67,7 @@ body {
         padding: 10px 20px;
     }
 
+	
     .navigation {
         display: flex;
 		gap: 1rem; /* Space between nav items */
