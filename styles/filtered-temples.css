@@ -27,9 +27,13 @@ header {
 
 h2 {
     font-size: 2rem;
-    color: rgb(246, 242, 250);
+    color: blueviolet;;
     text-align: center;
     display: inline-block;
+}
+
+h1 {
+    color: #fff;
 }
 
 .menu-icon {
@@ -55,8 +59,8 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-} */
-
+}
+ */
 nav a {
     color: #fff;
     text-align: center;
@@ -141,6 +145,6 @@ nav {
 
 /* Add this to ensure proper stacking */
 .header-container {
-    /* grid-auto-flow: column; */
+    grid-auto-flow: column;
     position: relative; /* Make sure the nav is positioned under the header */
 }

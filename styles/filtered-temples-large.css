@@ -14,6 +14,8 @@ body {
 	justify-content: center;
 	gap: 1rem;
   }
+ 
+  
   
   .temple-cards-container {
 	display: grid;
@@ -22,11 +24,13 @@ body {
 	padding: 2rem;
   }
   
+
   .temple-card {
 	border: 1px solid #ccc;
 	padding: 1rem;
 	text-align: center;
 	background-color: #f9f9f9;
+  color: black;
   }
   
   .temple-card img {
@@ -43,18 +47,15 @@ body {
 @media (min-width: 768px) {
 
     body {
-        max-width: max-content;
+        max-width: 900px;
         margin: 0 auto;
     }
-
 
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-		    grid-auto-flow: column;
-
     }
 
     nav {
@@ -68,9 +69,8 @@ body {
         padding: 10px 20px;
     }
 
-	
     .navigation {
-    display: flex;
+        display: flex;
 		gap: 1rem; /* Space between nav items */
         /* flex-direction: row; */
 		
