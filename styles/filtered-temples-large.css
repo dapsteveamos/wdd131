@@ -8,6 +8,7 @@ body {
 	padding: 1rem;
   }
   
+  
   nav {
 	display: flex;
 	justify-content: center;
@@ -66,7 +67,8 @@ body {
 
     .navigation {
         display: flex;
-        flex-direction: row;
+		gap: 1rem; /* Space between nav items */
+        /* flex-direction: row; */
 		
     }
 
