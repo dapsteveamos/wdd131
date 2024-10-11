@@ -140,5 +140,6 @@ nav {
 
 /* Add this to ensure proper stacking */
 .header-container {
+    grid-auto-flow: column;
     position: relative; /* Make sure the nav is positioned under the header */
 }
