@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;400&display=swap');
+/* 1. Set default font family and max-width with padding */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;  /* Limit document width */
+    padding: 20px;     /* Padding around the document */
+}
+
+/* 2. Define CSS variables in the :root pseudo-class */
+:root {
+    --primary-color: #396E94;          /* Primary color for headings */
+    --accent-color-1: #FF4136;        /* First accent color */
+    --neutral-color-1: #FFFFFF;       /* Neutral color white */
+    --neutral-color-2: #99B6C3;       /* Light grey */
+    --accent-color-2: #343A40;        /* Dark grey */
+
+    --heading-font: 'Montserrat', sans-serif; /* Font for headings */
+    --paragraph-font: 'Open Sans', sans-serif; /* Font for paragraphs */
+
+    /* Navigation colors */
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: var(--neutral-color-1);         /* Color for nav links */
+    --nav-hover-link-color: var(--neutral-color-2);   /* Color on hover */
+    --nav-hover-background-color: var(--accent-color-1); /* Background on hover */
+}
+
+/* 3. Group all heading elements for consistent styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);  /* Use the heading font */
+    color: var(--primary-color);        /* Set color from variable */
+}
+
+/* 4. Header styles */
+header {
+    padding: 20px;                     /* Padding inside the header */
+    background-color: var(--primary-color); /* Background color for header */
+    color: var(--neutral-color-1);      /* Text color in the header */
+}
+
+.head1 {
+    color: var(--neutral-color-1);
+}
+
+/* 5. Paragraph styles */
+p {
+    padding: 25px;                     /* Padding around paragraphs */
+}
+
+/* 6. Navigation styles */
+nav {
+    background-color: var(--nav-background-color); /* Nav background color */
+    font-size: 1.2rem;                 /* Font size for navigation */
+    display: flex;                     /* Flexbox for layout */
+}
+
+/* 7. Styles for navigation links */
+nav a {
+    display: block;                    /* Block display for links */
+    color: var(--nav-link-color);     /* Link color */
+    text-decoration: none;             /* Remove underline */
+    padding: 1rem;                    /* Padding around links */
+}
+
+/* transition effect  */
+nav a {
+    transition: background-color 1s ease, color 1s ease;
+}
+
+/* 8. Link styles */
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);     /* Color for unvisited and visited links */
+}
+
+/* 9. Hover effects for navigation links */
+nav a:hover {
+    color: var(--nav-hover-link-color); /* Hover text color */
+    background-color: var(--nav-hover-background-color); /* Hover background color */
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--neutral-color-1);
+}
