@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;400&display=swap');
-
 /* 1. Set default font family and max-width with padding */
 body {
     font-family: var(--paragraph-font);
-    max-width: 100%;  /* Full width for mobile-first approach */
-    padding: 10px;     /* Smaller padding for mobile */
-    font-size: 1rem;   /* Default font size for mobile */
+    max-width: 960px;  /* Limit document width */
+    padding: 20px;     /* Padding around the document */
 }
 
 /* 2. Define CSS variables in the :root pseudo-class */
@@ -37,7 +35,6 @@ header {
     padding: 20px;                     /* Padding inside the header */
     background-color: var(--primary-color); /* Background color for header */
     color: var(--neutral-color-1);      /* Text color in the header */
-    text-align: center;                 /* Center header content for mobile */
 }
 
 .head1 {
@@ -46,17 +43,14 @@ header {
 
 /* 5. Paragraph styles */
 p {
-    padding: 15px;                     /* Smaller padding for mobile */
-    font-size: 1rem;                   /* Default paragraph size for mobile */
+    padding: 25px;                     /* Padding around paragraphs */
 }
 
 /* 6. Navigation styles */
 nav {
     background-color: var(--nav-background-color); /* Nav background color */
-    font-size: 1rem;                 /* Font size for navigation */
+    font-size: 1.2rem;                 /* Font size for navigation */
     display: flex;                     /* Flexbox for layout */
-    flex-direction: column;             /* Vertical navigation for mobile */
-    text-align: center;                 /* Center links for mobile */
 }
 
 /* 7. Styles for navigation links */
@@ -64,8 +58,7 @@ nav a {
     display: block;                    /* Block display for links */
     color: var(--nav-link-color);     /* Link color */
     text-decoration: none;             /* Remove underline */
-    padding: 0.8rem;                    /* Smaller padding for mobile */
-    font-size: 1rem;                   /* Smaller font size for mobile */
+    padding: 1rem;                    /* Padding around links */
 }
 
 /* transition effect  */
@@ -84,70 +77,8 @@ nav a:hover {
     background-color: var(--neutral-color-2); /* Hover background color */
 }
 
-/* 10. Footer styles */
 footer {
-    padding: 10px;
+    padding: 20px;
     background-color: var(--primary-color);
     color: var(--neutral-color-1);
-    text-align: center;               /* Center footer content for mobile */
-}
-
-/* Media Queries */
-
-/* 11. For screens larger than 600px (Tablets) */
-@media (min-width: 600px) {
-    body {
-        padding: 20px;
-        font-size: 1.1rem; /* Increase font size for tablets */
-    }
-
-    header {
-        text-align: center; /* Keep header content centered */
-    }
-
-    nav {
-        flex-direction: row; /* Horizontal navigation on tablets */
-        justify-content: center; /* Center navigation */
-    }
-
-    nav a {
-        padding: 1rem;           /* Increase padding for navigation links */
-        font-size: 1.1rem;        /* Larger font size for tablets */
-    }
-
-    p {
-        padding: 20px;           /* Increase paragraph padding */
-        font-size: 1.1rem;        /* Larger paragraph font for tablets */
-    }
-}
-
-/* 12. For screens larger than 1024px (Desktops) */
-@media (min-width: 1024px) {
-    body {
-        max-width: 960px;  /* Limit document width for desktops */
-        margin: 0 auto;    /* Center the content horizontally */
-        font-size: 1.2rem; /* Slightly larger font size for desktops */
-    }
-
-    header {
-        text-align: left;  /* Left-align header content for desktops */
-    }
-
-    nav {
-        justify-content: flex-start; /* Align nav items to the left */
-    }
-
-    nav a {
-        padding: 1.2rem;  /* Larger padding for desktop navigation links */
-        font-size: 1.2rem; /* Increase font size for desktops */
-    }
-
-    footer {
-        text-align: left; /* Left-align footer content for desktops */
-    }
-
-    p {
-        padding: 25px;    /* Increase paragraph padding */
-        font-size: 1.2rem; /* Larger paragraph font size for desktops */
-    }
 }
