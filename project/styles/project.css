@@ -63,7 +63,7 @@ nav a {
 
 /* transition effect  */
 nav a {
-    transition: background-color 1s ease, color 1s ease;
+    transition: background-color 0.6s ease, color 0.6s ease;
 }
 
 /* 8. Link styles */
@@ -73,8 +73,8 @@ nav a:link, nav a:visited {
 
 /* 9. Hover effects for navigation links */
 nav a:hover {
-    color: var(--nav-hover-link-color); /* Hover text color */
-    background-color: var(--nav-hover-background-color); /* Hover background color */
+    color: var(--accent-color-1); /* Hover text color */
+    background-color: var(--neutral-color-2); /* Hover background color */
 }
 
 footer {
