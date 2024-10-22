@@ -107,6 +107,9 @@ input[type="date"], textarea, input[type="text"] {
 }
 
 
-h1, .rcount {
+.tnks {
     padding: 5px;
+} 
+.rcount {
+    padding: 10px;
 }
