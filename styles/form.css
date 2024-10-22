@@ -95,3 +95,8 @@ input[type="submit"]:hover {
 input[type="date"], textarea, input[type="text"] {
     margin-left: -10px; /* Adjust as needed */
 }
+
+
+.optional {
+    color: blue;
+}
