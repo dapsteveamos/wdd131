@@ -19,3 +19,8 @@ window.onload = function() {
     const reviewsCount = localStorage.getItem('reviewsCount') || 0;
     localStorage.setItem('reviewsCount', parseInt(reviewsCount) + 1);
 }
+
+
+// Footer JavaScript for current year and last modified date
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
