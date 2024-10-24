@@ -33,7 +33,6 @@ body {
 header {
     width: 100vw; /* Full viewport width */
     padding: 20px;
-    /* background-color: var(--primary-color);  */
     background-color: rgba(57, 110, 148, 0.22); 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--neutral-color-1);
@@ -51,7 +50,6 @@ header.scrolled {
     background-color: rgba(0, 0, 0, 0.05); /* Faint background color when scrolled */
 }
 
-
 .logo01 {
     margin-right: auto;
 }
@@ -62,6 +60,17 @@ img {
 }
 
 /* Hamburger menu styling */
+/* .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    margin-left: auto;
+} */
+
+/* Hamburger menu styling */
 .hamburger {
     display: block;
     font-size: 2rem;
@@ -70,13 +79,27 @@ img {
     cursor: pointer;
     color: var(--primary-color);
     margin-left: auto;
+    z-index: 1001; /* Ensure it stays above the menu */
 }
 
-/* Default navigation styles for mobile */
+
+/* Navigation styles for mobile */
 .navigation {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    height: 100%;
+    width: 60%;
+    background-color: #FFFFFF;
     flex-direction: column;
     text-align: center;
+    transition: right 0.3s ease; /* Slide effect */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* When the open class is added, show the navigation */
+.navigation.open {
+    right: 0; /* Slide in from the right */
 }
 
 /* 3. Group all heading elements for consistent styling */
@@ -85,16 +108,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-/* Show navigation when open class is added */
-.navigation.open {
-    display: flex;
-}
-
 /* 4. Footer styles */
 footer {
     width: 100vw; /* Full viewport width */
     padding: 10px;
-    /* background-color: var(--primary-color); */
     background-color: var(--primary-color);
     color: var(--neutral-color-1);
     text-align: center;
@@ -108,7 +125,6 @@ p {
 
 /* 6. Navigation styles */
 nav {
-    /* background-color: rgba(210, 12, 12, 0.08); */
     font-size: 1rem;
     flex-direction: column;
     text-align: center;
@@ -143,7 +159,6 @@ nav a:hover {
     nav {
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
 
     .hamburger {
@@ -151,8 +166,12 @@ nav a:hover {
     }
 
     .navigation {
-        display: flex;
-        flex-direction: row;
+        position: static;
+        right: auto; /* Reset for larger screens */
+        height: auto;
+        width: auto;
+        flex-direction: row; /* Row layout on larger screens */
+        background-color: transparent; /* No background */
     }
 
     nav a {

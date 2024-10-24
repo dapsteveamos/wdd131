@@ -159,6 +159,7 @@ nav a:hover {
     nav {
         display: flex;
         flex-direction: row;
+
     }
 
     .hamburger {
@@ -210,4 +211,34 @@ nav a:hover {
         padding: 25px;
         font-size: 1.2rem;
     }
+}
+
+
+/* Add to your CSS file */
+
+.services, .testimonials, footer {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(57, 110, 148, 0.1);
+    border-radius: 5px;
+}
+
+h3 {
+    color: var(--primary-color);
+}
+
+strong {
+    color: var(--accent-color-2);
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc; /* Change bullet style if needed */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--neutral-color-1);
 }
