@@ -29,32 +29,26 @@ body {
     --paragraph-font: 'Open Sans', sans-serif;
 }
 
-/* 3. Header styles */
-/* header {
-    width: 100vw; 
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-} */
-
-/* Updated Header Styles */
+/* Original header styles */
 header {
     width: 100vw; /* Full viewport width */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.05); /* Faint background color */
+    /* background-color: var(--primary-color);  */
+    background-color: rgba(57, 110, 148, 0.22); 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    color: var(--primary-color);
+    color: var(--neutral-color-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0; /* Stick to the top */
     z-index: 1000; /* Make sure it's above other content */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Faint background when scrolled */
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.05); /* Faint background color when scrolled */
 }
 
 
@@ -100,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     width: 100vw; /* Full viewport width */
     padding: 10px;
+    /* background-color: var(--primary-color); */
     background-color: var(--primary-color);
     color: var(--neutral-color-1);
     text-align: center;
