@@ -4,19 +4,18 @@ const navMenu = document.querySelector('.navigation');
 
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('open');
-    hamburger.textContent = hamburger.textContent === 'X' ? '☰' : 'X';
+    // Toggle hamburger text based on menu state
+    hamburger.textContent = navMenu.classList.contains('open') ? 'X' : '☰';
 });
 
 // Close the menu when a navigation link is clicked
 document.querySelectorAll('.navigation a').forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('open');
-        hamburger.textContent = '☰';
+        hamburger.textContent = '☰'; // Reset to hamburger icon
     });
 });
 
-
-// i am adding this scrooled js because i added a class to enable the header to become faint when i scrow
 // JavaScript to change header background on scroll
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
