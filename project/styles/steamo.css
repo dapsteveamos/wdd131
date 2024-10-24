@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;400&display=swap');
+
+/* 1. Set default font family */
+body {
+    font-family: var(--paragraph-font);
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove padding */
+    font-size: 1rem;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    box-sizing: border-box;
+}
+
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Define CSS variables in the :root pseudo-class */
+:root {
+    --primary-color: #396E94;
+    --accent-color-1: #FF4136;
+    --neutral-color-1: #FFFFFF;
+    --neutral-color-2: #99B6C3;
+    --accent-color-2: #343A40;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+}
+
+/* Original header styles */
+header {
+    width: 100vw; /* Full viewport width */
+    padding: 20px;
+    background-color: var(--primary-color); /* Original background color */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--neutral-color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Make sure it's above other content */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Faint background when scrolled */
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.05); /* Faint background color when scrolled */
+}
+
+
+.logo01 {
+    margin-right: auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    margin-left: auto;
+}
+
+/* Default navigation styles for mobile */
+.navigation {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* 3. Group all heading elements for consistent styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Show navigation when open class is added */
+.navigation.open {
+    display: flex;
+}
+
+/* 4. Footer styles */
+footer {
+    width: 100vw; /* Full viewport width */
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--neutral-color-1);
+    text-align: center;
+}
+
+/* 5. Paragraph styles */
+p {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* 6. Navigation styles */
+nav {
+    background-color: rgba(210, 12, 12, 0.08);
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* 7. Styles for navigation links */
+nav a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* 8. Hover effects for navigation links */
+nav a:hover {
+    color: var(--accent-color-1);
+    background-color: var(--neutral-color-2);
+}
+
+/* Media Queries */
+
+/* 9. For screens larger than 600px (Tablets) */
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav a {
+        padding: 1rem;
+        font-size: 1.1rem; /* Slightly larger font size for tablets */
+    }
+
+    p {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+}
+
+/* 10. For screens larger than 1024px (Desktops) */
+@media (min-width: 1024px) {
+    body {
+        max-width: 100vw;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    header, footer {
+        width: 100vw; /* Full viewport width */
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    nav a {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    p {
+        padding: 25px;
+        font-size: 1.2rem;
+    }
+}
