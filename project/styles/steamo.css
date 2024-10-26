@@ -45,6 +45,10 @@ header {
     transition: background-color 0.3s ease; /* Smooth transition */
 }
 
+.menuf a {
+    padding: 0.5rem; /* Adjust to desired spacing */
+}
+
 /* Faint background when scrolled */
 header.scrolled {
     background-color: rgba(0, 0, 0, 0.05); /* Faint background color when scrolled */
@@ -52,23 +56,9 @@ header.scrolled {
 
 .logo01 {
     margin-right: auto;
+    width: 80px;
+    height: 80px;
 }
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-/* Hamburger menu styling */
-/* .hamburger {
-    display: block;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--primary-color);
-    margin-left: auto;
-} */
 
 /* Hamburger menu styling */
 .hamburger {
@@ -79,9 +69,8 @@ img {
     cursor: pointer;
     color: var(--primary-color);
     margin-left: auto;
-    z-index: 1001; /* Ensure it stays above the menu */
+    z-index: 1000; 
 }
-
 
 /* Navigation styles for mobile */
 .navigation {
@@ -110,11 +99,124 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 4. Footer styles */
 footer {
-    width: 100vw; /* Full viewport width */
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--neutral-color-1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Four columns layout */
+    grid-template-areas: 
+        "logo description menu policies"
+        "social social social social"
+        "copyright copyright copyright copyright";
+    gap: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer img.logo01 {
+    grid-area: logo;
+    justify-self: start;
+}
+
+footer p {
+    grid-area: description;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+footer .footerh2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+footer .menuf {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer .menuf a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer .menuf a:hover {
+    color: #fff;
+}
+
+footer ul {
+    grid-area: policies;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+footer ul a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer ul a:hover {
+    color: #fff;
+}
+
+footer .smlogos {
+    grid-area: social;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+footer .footer-logo {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .footer-logo:hover {
+    transform: scale(1.1);
+}
+
+/* footer p.copyright {
+    grid-area: copyright;
     text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ccc;
+} */
+
+/* Responsive Footer for Mobile View */
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "logo"
+            "description"
+            "menu"
+            "policies"
+            "social"
+            "copyright";
+    }
+
+    footer .menuf,
+    footer ul {
+        align-items: center;
+    }
+
+    footer img.logo01 {
+        justify-self: center;
+    }
+
+    footer p {
+        text-align: center;
+    }
 }
 
 /* 5. Paragraph styles */
@@ -146,6 +248,21 @@ nav a:hover {
     background-color: var(--neutral-color-2);
 }
 
+/* Style for the footer social media logos */
+.footer-logo {
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    margin: 0 10px; /* Add spacing between logos */
+    filter: grayscale(100%); /* Optional: Apply grayscale filter for a monochrome effect */
+    transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for footer logos */
+.footer-logo:hover {
+    background-color: #FF4136;
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
 /* Media Queries */
 
 /* 9. For screens larger than 600px (Tablets) */
@@ -159,7 +276,6 @@ nav a:hover {
     nav {
         display: flex;
         flex-direction: row;
-
     }
 
     .hamburger {
@@ -183,6 +299,9 @@ nav a:hover {
     p {
         padding: 20px;
         font-size: 1.1rem;
+    }
+    footer p {
+        text-align: center;
     }
 }
 
@@ -211,14 +330,22 @@ nav a:hover {
         padding: 25px;
         font-size: 1.2rem;
     }
+    footer p {
+        text-align: center;
+       
+    }
+
+    .pfoot {
+        /* margin-top: 0;  */
+        /* Reset margin for larger screens if needed */
+    }
 }
 
-
 /* Add to your CSS file */
-
 .services, .testimonials, footer {
     margin: 20px 0;
-    padding: 15px;
+    /* padding: 15px; */
+    /* background-color: rgba(57, 110, 148, 0.1); */
     background-color: rgba(57, 110, 148, 0.1);
     border-radius: 5px;
 }
@@ -233,12 +360,24 @@ strong {
 
 ul {
     margin-left: 20px;
-    list-style-type: disc; /* Change bullet style if needed */
+    list-style-type: disc; 
 }
 
 footer {
+    background-color: rgba(57, 110, 148, 0.873);
+    border-top: 5px;
+    margin: 0px 0;
+
+}
+
+
+
+.pfoot {
+    grid-area: copyright;
     text-align: center;
-    padding: 10px 0;
-    background-color: var(--primary-color);
-    color: var(--neutral-color-1);
+    padding: 10px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
 }

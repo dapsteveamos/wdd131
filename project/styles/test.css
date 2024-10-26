@@ -211,3 +211,361 @@ nav a:hover {
         font-size: 1.2rem;
     }
 }
+
+
+
+/* ANOTHER CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;400&display=swap');
+
+/* 1. Set default font family */
+body {
+    font-family: var(--paragraph-font);
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove padding */
+    font-size: 1rem;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    box-sizing: border-box;
+}
+
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Define CSS variables in the :root pseudo-class */
+:root {
+    --primary-color: #396E94;
+    --accent-color-1: #FF4136;
+    --neutral-color-1: #FFFFFF;
+    --neutral-color-2: #99B6C3;
+    --accent-color-2: #343A40;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+}
+
+/* Original header styles */
+header {
+    width: 100vw; /* Full viewport width */
+    padding: 20px;
+    background-color: rgba(57, 110, 148, 0.22); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--neutral-color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Make sure it's above other content */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.menuf a {
+    padding: 0.5rem; /* Adjust to desired spacing */
+}
+
+
+/* Faint background when scrolled */
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.05); /* Faint background color when scrolled */
+}
+
+.logo01 {
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+}
+
+/* img {
+    width: 100px;
+    height: 100px;
+} */
+
+/* Hamburger menu styling */
+/* .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    margin-left: auto;
+} */
+
+/* Hamburger menu styling */
+.hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    margin-left: auto;
+    z-index: 1000; 
+    /* Ensure it stays above the menu */
+}
+
+
+/* Navigation styles for mobile */
+.navigation {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    height: 100%;
+    width: 60%;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    text-align: center;
+    transition: right 0.3s ease; /* Slide effect */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* When the open class is added, show the navigation */
+.navigation.open {
+    right: 0; /* Slide in from the right */
+}
+
+/* 3. Group all heading elements for consistent styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* 4. Footer styles */
+footer {
+    width: 100vw; /* Full viewport width */
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--neutral-color-1);
+    text-align: center;
+}
+
+.menuf a  {
+    color: #FFFFFF;
+}
+
+
+.footerh2 {
+    color: #FFFFFF;
+}
+/* 5. Paragraph styles */
+p {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* 6. Navigation styles */
+nav {
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* 7. Styles for navigation links */
+nav a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* 8. Hover effects for navigation links */
+nav a:hover {
+    color: var(--accent-color-1);
+    background-color: var(--neutral-color-2);
+
+}
+
+/* Style for the footer social media logos */
+.footer-logo {
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    margin: 0 10px; /* Add spacing between logos */
+    filter: grayscale(100%); /* Optional: Apply grayscale filter for a monochrome effect */
+    transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+
+/* Hover effect for footer logos */
+.footer-logo:hover {
+    /* filter: grayscale(0);  */
+    /* Remove grayscale on hover */
+    background-color: #FF4136;
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+/* Media Queries */
+
+/* 9. For screens larger than 600px (Tablets) */
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+
+    .navigation {
+        position: static;
+        right: auto; /* Reset for larger screens */
+        height: auto;
+        width: auto;
+        flex-direction: row; /* Row layout on larger screens */
+        background-color: transparent; /* No background */
+    }
+
+    nav a {
+        padding: 1rem;
+        font-size: 1.1rem; /* Slightly larger font size for tablets */
+    }
+
+    p {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+}
+
+/* 10. For screens larger than 1024px (Desktops) */
+@media (min-width: 1024px) {
+    body {
+        max-width: 100vw;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    header, footer {
+        width: 100vw; /* Full viewport width */
+    }
+
+    nav {
+        justify-content: flex-start;      
+    }
+
+    nav a {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    p {
+        padding: 25px;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Add to your CSS file */
+
+.services, .testimonials, footer {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(57, 110, 148, 0.1);
+    border-radius: 5px;
+}
+
+h3 {
+    color: var(--primary-color);
+}
+
+strong {
+    color: var(--accent-color-2);
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc; /* Change bullet style if needed */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--neutral-color-1);
+}
+
+.footero1 {
+    color: #FFFFFF;
+}
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+    grid-template-areas: 
+        "logo description menu policies"
+        "social social social social"
+        "copyright copyright copyright copyright";
+    gap: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer img.logo01 {
+    grid-area: logo;
+    justify-self: start;
+}
+
+footer p {
+    grid-area: description;
+}
+
+footer .menuf {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer ul {
+    grid-area: policies;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer .smlogos {
+    grid-area: social;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+footer p.copyright {
+    grid-area: copyright;
+    text-align: center;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "logo"
+            "description"
+            "menu"
+            "policies"
+            "social"
+            "copyright";
+    }
+
+    footer .menuf,
+    footer ul {
+        align-items: center;
+    }
+}
