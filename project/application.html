@@ -17,37 +17,36 @@
 
 
 <!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
-<script src="js/scripts.js" defer></script>
+<link href="styles/applicationform.css" rel="stylesheet">
 
+    <!-- STYLE SHEETS -->
+<link rel="stylesheet" href="styles/productreviewform.css">
+<!-- <link rel="stylesheet" href="styles/steamo.css"> -->
+<script src="scripts/productreview.js" defer></script>
+<script src="scripts/steamo.js" defer></script>
+   <!-- <script src="/scripts/form.js" defer></script> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
 
      
 </head>
 <body>
-<!-- HEADER HERE -->
-	<header>
- <h1>Course Proposal</h1>
-        <h2>Designing Web Forms</h2>
+    
+    <header>
+        <img class="logo01" src="images/STEAMO TECHNOLOGIES LOGO ONLY 01.png" width="50px" height="50px" alt="Steamo Technologies logo">
+        <nav class="navigation">
+            <a href="index.html" aria-label="Go to Home page">Home</a>
+            <a href="aboutus.html" aria-label="Learn More About Us">About Us</a>
+            <a href="product.html" aria-label="Order our Product">Products</a>
+            <a href="news.html" aria-label="Update yourself with current News">News</a>
+            <a href="contactus.html" aria-label="Contact Us for More Information">Contact Us</a>
+        </nav>
+        <button class="hamburger">☰</button>
     </header>
-    
-    
-<!-- NAVIGATION HERE -->
-    <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>    
-        </ul>
-    </nav>
-    
+
+<!-- HEADER HERE -->
     
 <!-- CONTENT HERE -->
 <main>
@@ -63,7 +62,7 @@
     </fieldset>
 
     <fieldset>
-        <legend>Course Information</legend>
+        <legend>Course Infromation</legend>
         <div>Audience</div>
         <label><input type="radio" name="audience" value="beginner"> Beginner</label>
         <label><input type="radio" name="audience" value="intermediate"> intermediate</label>
@@ -94,19 +93,48 @@
 
     <input type="submit" value="Propose My Course">
 
-    </form>
-
-
-    
-        
+</form>
 
           
         
     </main>
     
 <!-- FOOTER HERE -->   
-    <footer>
-        &copy; 2024 &bull; Steve Amos &bull; Steamo Technologies
-    </footer>
+<footer>
+    <img class="logo01" src="images/STEAMO TECHNOLOGIES LOGO ONLY 01.png" width="50px" height="50px" alt="Steamo Technologies logo">
+    <div>
+        <p>Steamo Technologies is the platform built for enterprise individuals and companies. Smart design capabilities, flexible dev tools, and streamlined business management mean you can do more—with more.</p>
+    </div>
+    
+    <div>
+        <nav class="menuf">
+            <h2 class="footerh2">Menu</h2>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="product.html">Products</a>
+            <a href="news.html">News</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </div>
+
+    <div>
+        <ul>
+            <h2 class="footerh2">Policies</h2>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="faq.html">Frequently Asked Questions</a>
+        </ul>
+    </div>
+
+    <div class="smlogos">
+        <a class="sl" href="https://linkedin.com/in/steve-amos-ab910b282"><img class="footer-logo" src="images/linkedinb.png" alt="LinkedIn logo"></a> 
+        <a class="sl" href="https://web.facebook.com/profile.php?id=61566945636553"><img class="footer-logo" src="images/facebookb.png" alt="Facebook logo"></a> 
+        <a class="sl" href="https://web.facebook.com/profile.php?id=61566945636553"><img class="footer-logo" src="images/instagramb.png" alt="Instagram logo"></a> 
+    </div>
+
+    <div class="pfoot">
+        <p>&copy; 2024 Steamo Technologies | IT Solutions</p>
+    </div>
+</footer>
 </body>
 </html>

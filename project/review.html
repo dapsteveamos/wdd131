@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-Us">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steamo Technologies - News</title>
-    <meta name="description" content="Latest News from Steamo Technologies">
+    <title>Review Confirmation</title>
+    <meta name="description" content="Thanks for filling Steamo Technologies Form">
+    <meta name="author" content="STEVE DAPRIM AMOS">
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="styles/productreviewform.css">
     <link rel="stylesheet" href="styles/steamo.css">
-    <script src="scripts/steamo.js" defer></script>
+   <script src="scripts/productreview.js" defer></script>
+   <script src="scripts/steamo.js" defer></script>
+   <!-- <script src="/scripts/form.js" defer></script> -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img class="logo01" src="images/STEAMO TECHNOLOGIES LOGO ONLY 01.png" width="50px" height="50px" alt="Steamo Technologies logo">
@@ -20,31 +29,9 @@
         </nav>
         <button class="hamburger">☰</button>
     </header>
-    
-    <h1 class="head1">Steamo Technologies News</h1>
-    <main>
-        <h2>Latest News</h2>
-        <p>
-            Stay updated with the latest developments, announcements, and projects from Steamo Technologies. Check back frequently to learn more about our IT solutions, new products, and events.
-        </p>
-        <article>
-            <h3>Product Launch: New Website Design Tool</h3>
-            <p>We're excited to announce the launch of our new website design tool. It offers intuitive drag-and-drop functionality for creating stunning websites.</p>
-            <time datetime="2024-10-10">October 10, 2024</time>
-        </article>
-
-        <section class="newsletter-signup">
-            <h2>Sign Up for Our Weekly Newsletter</h2>
-            <form action="/submit_newsletter" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Sign Up</button>
-            </form>
-        </section>
-    </main>
-
+    <h1>Product Name submitted</h1>
+    <h1 class="tnks">Thank you for your review!</h1>
+    <p class="rcount">You have submitted <span id="reviewCount"></span> reviews.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <footer>
         <img class="logo01" src="images/STEAMO TECHNOLOGIES LOGO ONLY 01.png" width="50px" height="50px" alt="Steamo Technologies logo">
         <div>
@@ -81,5 +68,10 @@
             <p>&copy; 2024 Steamo Technologies | IT Solutions</p>
         </div>
     </footer>
+    <script>
+        // Display the review count from localStorage
+        const reviewCount = localStorage.getItem('reviewsCount') || 0;
+        document.getElementById('reviewCount').textContent = reviewCount;
+    </script>
 </body>
 </html>

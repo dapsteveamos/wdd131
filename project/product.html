@@ -31,6 +31,212 @@
         </ul>
     </main>
 
+<!-- this is the part i add -->
+<main>
+    <h1>Product samples</h1>
+
+    <div class="call-to-action">
+        <a href="contact.html" class="cta-button">Contact Us for More Information</a>
+    </div>
+
+    <section class="trip-descriptions">
+        <article class="trip">
+            <h2>Reciepts</h2>
+            <img src="images/recieptsample.jpg" alt="Adventure Rapids">
+            <p>Experience the thrill of Adventure Rapids with our expert guides. This trip is perfect for thrill-seekers looking for an adrenaline rush.</p>
+        </article>
+        <article class="trip">
+            <h2>Family Fun Float</h2>
+            <img src="images/rafting52_600.jpg" alt="Family Fun Float">
+            <p>Enjoy a leisurely float down the river with the whole family. This trip is suitable for all ages and provides a relaxing and fun experience.</p>
+        </article>
+        <article class="trip">
+            <h2>Scenic River Tour</h2>
+            <img src="images/rafting28_1024.jpg" alt="Scenic River Tour">
+            <p>Take in the beautiful scenery and wildlife on our Scenic River Tour. Perfect for nature lovers and photography enthusiasts.</p>
+        </article>
+        <article class="trip">
+            <h2>Scenic River Tour</h2>
+            <img src="images/rafting28_1024.jpg" alt="Scenic River Tour">
+            <p>Take in the beautiful scenery and wildlife on our Scenic River Tour. Perfect for nature lovers and photography enthusiasts.</p>
+        </article>
+        <article class="trip">
+            <h2>Scenic River Tour</h2>
+            <img src="images/rafting28_1024.jpg" alt="Scenic River Tour">
+            <p>Take in the beautiful scenery and wildlife on our Scenic River Tour. Perfect for nature lovers and photography enthusiasts.</p>
+        </article>
+    </section>
+
+    <h2>Available Trips</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Trip Name</th>
+                <th>Duration</th>
+                <th>Difficulty</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Adventure Rapids</td>
+                <td>4 Hours</td>
+                <td>High</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td>Family Fun Float</td>
+                <td>3 Hours</td>
+                <td>Low</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Scenic River Tour</td>
+                <td>5 Hours</td>
+                <td>Medium</td>
+                <td>$100</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Customer Testimonials -->
+    <section class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <article class="testimonial">
+            <p>"The Adventure Rapids trip was the most thrilling experience of my life! Highly recommend it!" - John D.</p>
+        </article>
+        <article class="testimonial">
+            <p>"Our family had a wonderful time on the Family Fun Float. It was the perfect way to spend a sunny afternoon." - Sarah W.</p>
+        </article>
+        <article class="testimonial">
+            <p>"The Scenic River Tour offered breathtaking views and an unforgettable experience. Can't wait to go again!" - Emily R.</p>
+        </article>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>What should I wear for the rafting trips?</summary>
+            <p>Wear comfortable clothing that can get wet. We recommend quick-drying materials and water shoes.</p>
+        </details>
+        <details>
+            <summary>Is there an age limit for the trips?</summary>
+            <p>Yes, Adventure Rapids is suitable for ages 12 and up, while Family Fun Float is open to all ages.</p>
+        </details>
+        <details>
+            <summary>Do I need to know how to swim?</summary>
+            <p>While it's not required to know how to swim, it is highly recommended for your safety. All participants will be provided with life jackets.</p>
+        </details>
+    </section>
+
+    <!-- Detailed Itinerary for Each Trip -->
+    <section class="itineraries">
+        <h2>Trip Itineraries</h2>
+        <article class="itinerary">
+            <h3>Adventure Rapids</h3>
+            <ul>
+                <li>Meet at the base camp and safety briefing</li>
+                <li>Rafting through Class III and IV rapids</li>
+                <li>Break for lunch</li>
+                <li>Continue rafting and scenic spots</li>
+                <li>Return to base camp</li>
+            </ul>
+        </article>
+        <article class="itinerary">
+            <h3>Family Fun Float</h3>
+            <ul>
+                <li>Meet at the base camp and safety briefing</li>
+                <li>Leisurely float down the river</li>
+                <li>Spot wildlife and scenic views</li>
+                <li>Break for snacks</li>
+                <li>Continue floating and games</li>
+                <li>Return to base camp</li>
+            </ul>
+        </article>
+        <article class="itinerary">
+            <h3>Scenic River Tour</h3>
+            <ul>
+                <li>Meet at the base camp and safety briefing</li>
+                <li>Start the scenic tour with guide commentary</li>
+                <li>Photography opportunities</li>
+                <li>Break for lunch</li>
+                <li>Continue tour with historical points of interest</li>
+                <li>Return to base camp</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Safety Information -->
+    <section class="safety-info">
+        <h2>Safety Information</h2>
+        <p>Your safety is our top priority. Our guides are highly trained professionals, and we provide all necessary safety equipment, including life jackets and helmets. Please listen to your guide's instructions and follow all safety guidelines.</p>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form">
+        <h2>Book Your Trip</h2>
+        <form action="submit_booking.html" method="post">
+            <label for="trip">Select Trip:</label>
+            <select id="trip" name="trip">
+                <option value="adventure-rapids">Adventure Rapids</option>
+                <option value="family-fun-float">Family Fun Float</option>
+                <option value="scenic-river-tour">Scenic River Tour</option>
+            </select>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <!-- added this -->
+     <main>
+    <div class="hero">
+        <img src="images/hero_transparency_1024.png" alt="Hero image">
+        <div class="hero-text">
+            <h1>Ride the Rapids, Embrace the Adventure</h1>
+        </div>
+    </div>
+    
+
+    <section class="newsletter-signup">
+        <h2>Sign Up for Our Weekly Newsletter</h2>
+        <form action="/submit_newsletter" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <section class="call-to-action">
+        <h2>Plan Your Next Adventure</h2>
+        <p><a href="trips.html">Check out our trips and book your adventure today!</a></p>
+    </section>
+
+    <section class="site-purpose">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/rafting64_600.jpg" alt="Rafting adventure">
+                <h3>Thrilling Rafting Experiences</h3>
+                <p>Join us for an unforgettable journey down the rapids.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/rafting65_600.jpg" alt="Scenic river">
+                <h3>Explore Scenic Rivers</h3>
+                <p>Discover the beauty and excitement of nature.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
     <footer>
         <img class="logo01" src="images/STEAMO TECHNOLOGIES LOGO ONLY 01.png" width="50px" height="50px" alt="Steamo Technologies logo">
         <div>

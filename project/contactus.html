@@ -29,10 +29,135 @@
             <li><strong>Website Development:</strong> Responsive, modern websites tailored to your business needs.</li>
             <li><strong>Digital Skills Training:</strong> Courses in website development, IT solutions, and digital marketing strategies.</li>
         </ul>
+        <section class="newsletter-signup">
+            <h2>Sign Up for Our Weekly Newsletter</h2>
+            <form action="/submit_newsletter" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+
+        <main>
+            <h1>Contact Us</h1>
+        
+            <h2>Company Information</h2>
+            <p>White Water Rafting</p>
+            <p>Address: 123 Adventure Lane, Rapids City, US</p>
+            <p>Phone: +234 9166577130</p>
+            <p>Email: <a href="mailto:dapsteveamos@gmail.com">dapsteveamos@gmail.com</a></p>
+        
+            <h2>Office Hours</h2>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday: 10:00 AM - 4:00 PM</p>
+            <p>Sunday: Closed</p>
+        
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2811.1783248491643!2d7.011537378853736!3d4.837430294903264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1721294027316!5m2!1sen!2sng" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+            <h2>Meet Our Team</h2>
+            <section class="adventures">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Steve Daprim Amos">
+                    <figcaption>Steve Daprim Amos - Project Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.png" alt="Richmond Akpama">
+                    <figcaption>Richmond Akpama - Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee9.jpg" alt="David Mark">
+                    <figcaption>David Mark - Graphics Designer</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Amos Tamuno-Emi">
+                    <figcaption>Amos Tamuno-Emi - Financial Officer</figcaption>
+                </figure>  
+            </section>
+        
+            <h2>Send Us a Message</h2>
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <input type="radio" id="general" name="purpose" value="general">
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+        
+                <button type="submit">Submit</button>
+            </form>
+        
+            <h2>Frequently Asked Questions</h2>
+            <section class="faqs">
+                <details>
+                    <summary>How can I make a reservation?</summary>
+                    <p>You can make a reservation by filling out the form on this page or by calling us directly at +234 9166577130.</p>
+                </details>
+                <details>
+                    <summary>What should I bring on the trip?</summary>
+                    <p>We recommend bringing comfortable clothing, a change of clothes, sunscreen, and a reusable water bottle.</p>
+                </details>
+                <details>
+                    <summary>What is your cancellation policy?</summary>
+                    <p>If you need to cancel your reservation, please notify us at least 48 hours in advance for a full refund. Cancellations made within 48 hours are subject to a cancellation fee.</p>
+                </details>
+            </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Steamo Technologies | Products</p>
+        <img class="logo01" src="images/STEAMO TECHNOLOGIES LOGO ONLY 01.png" width="50px" height="50px" alt="Steamo Technologies logo">
+        <div>
+            <p>Steamo Technologies is the platform built for enterprise individuals and companies. Smart design capabilities, flexible dev tools, and streamlined business management mean you can do more—with more.</p>
+        </div>
+        
+        <div>
+            <nav class="menuf">
+                <h2 class="footerh2">Menu</h2>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="product.html">Products</a>
+                <a href="news.html">News</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </div>
+    
+        <div>
+            <ul>
+                <h2 class="footerh2">Policies</h2>
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="faq.html">Frequently Asked Questions</a>
+            </ul>
+        </div>
+    
+        <div class="smlogos">
+            <a class="sl" href="https://linkedin.com/in/steve-amos-ab910b282"><img class="footer-logo" src="images/linkedinb.png" alt="LinkedIn logo"></a> 
+            <a class="sl" href="https://web.facebook.com/profile.php?id=61566945636553"><img class="footer-logo" src="images/facebookb.png" alt="Facebook logo"></a> 
+            <a class="sl" href="https://web.facebook.com/profile.php?id=61566945636553"><img class="footer-logo" src="images/instagramb.png" alt="Instagram logo"></a> 
+        </div>
+    
+        <div class="pfoot">
+            <p>&copy; 2024 Steamo Technologies | IT Solutions</p>
+        </div>
     </footer>
 </body>
 </html>
