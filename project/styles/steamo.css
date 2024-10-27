@@ -444,7 +444,7 @@ grid-template-columns: 1fr 1fr;
 gap: 1rem;
 } */
 
-.trip {
+.trip { 
     max-width: 45%;
     text-align: center;
     border: 1px solid #ccc;
@@ -627,4 +627,12 @@ section.adventures img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 1rem;
+}
+
+.stf {
+    position: absolute;
+    opacity: 15%;
+    margin-top: auto;
+    top: 18%;
+    max-height: 50%;
 }
