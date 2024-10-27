@@ -606,6 +606,7 @@ section.adventures img {
 
 .hero-text h1 {
     font-family: var(--heading-font);
+    color: #fff;
     font-size: 2.5rem;
 }
 /* Site Purpose Grid */
